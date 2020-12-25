@@ -1,10 +1,10 @@
 
 set ns [new Simulator]
 
-set tf [open ex11.tr w]
+set tf [open ex1.tr w]
 $ns trace-all $tf
 
-set nf [open ex11.nam w]
+set nf [open ex1.nam w]
 $ns namtrace-all $nf
 
 set n0 [$ns node]
@@ -44,8 +44,9 @@ proc finish {} {
 	close $tf
 	close $nf
 	puts "running nam..."
-	exec nam ex11.nam &
+	exec nam ex1.nam &
 	exit 0
 }
 
 $ns run
+# grep "^f" ex1.tr
