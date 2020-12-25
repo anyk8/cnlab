@@ -43,7 +43,7 @@ proc finish {} {
 	close $tf
 	close $nf
 	puts "running nam..."
-	exec nam ex1.nam &
+	exec nam ex11.nam &
 	exit 0
 }
 
